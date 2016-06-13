@@ -1,9 +1,16 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+}
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-h3{
-  margin-left: 24px;
-  
+h1,h2,h3,h3,h4,h5{
+  text-align: center;
+}
+footer{
+  text-align: center;
 }
