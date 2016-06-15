@@ -13,7 +13,23 @@ h1,h2,h3,h3,h4,h5{
 }
 footer{
   text-align: center;
+  margin: 40px;
 }
 .navbar-inverse .navbar-nav>li>a {
   color: #cdcdcd;
+}
+
+header.jumbotron {
+  background: url("../img/Gaskellball.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: #eee;
+}
+
+header.jumbotron small{
+  color: #eee
+}
+
+header.jumbotron p{
+  color: #eee
 }
