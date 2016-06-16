@@ -1,15 +1,16 @@
-@media (min-width: 1200px) {
-  .container {
-    max-width: 970px;
-}
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-h1,h2,h3,h3,h4,h5{
-  text-align: center;
+h2,h3,h3,h4,h5{
+  /*text-align: center;*/
+
+}
+h2{
+  padding-left: 12px;
+  border-left: solid 4px #337ab7
 }
 footer{
   text-align: center;
@@ -19,17 +20,23 @@ footer{
   color: #cdcdcd;
 }
 
-header.jumbotron {
+header.jumbotron-extended {
   background: url("../img/Gaskellball.jpg");
   background-position: center center;
   background-size: cover;
   color: #eee;
+  height: 100%;
 }
 
-header.jumbotron small{
+header.jumbotron-extended small{
   color: #eee
 }
 
-header.jumbotron p{
+header.jumbotron-extended p{
   color: #eee
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
 }
