@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>みなとダンスクラブ 設立準備会</title>
-    <meta name="keyword" content="社交ダンス,教室,サークル,初心者,レッスン,社交ダンス教室,ヤングサークル,ヤングダンスサークル,競技ダンス,東京,港区,田町,三田,ボールルーム,ソシアル,ペアダンス,ワルツ,タンゴ,ルンバ,チャチャチャ,チャチャ,サンバ,ジャイブ,パソドプレ,クイック,スローフォックストロット,スロー,ベニーズワルツ,ウィンナーワルツ">
+    <meta name="keyword" content="社交ダンス,教室,サークル,初心者,レッスン,社交ダンス教室,ヤングサークル,ヤングダンスサークル,競技ダンス,グループレッスン,東京,港区,田町,三田,ボールルーム,ソシアル,ペアダンス,ワルツ,タンゴ,ルンバ,チャチャチャ,チャチャ,サンバ,ジャイブ,パソドプレ,クイック,スローフォックストロット,スロー,ベニーズワルツ,ウィンナーワルツ">
     <meta name="description" content="みなとダンスクラブは、東京都港区を中心に活動している若者（社会人）初心者向けの社交ダンスサークル（ヤングサークル）です。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="/favicon.png" type="image/png"/>
@@ -13,15 +14,26 @@
   <body>
     <nav class="navbar navbar-inverse">
       <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">メニュー</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="/"><span class="glyphicon glyphicon-home"></span> ホーム</a></li>
+            <li><a href="/about_us.html"><span class="glyphicon glyphicon-user"></span> クラブについて</a></li>
+            <li><a href="/kaisoku.html"><span class="glyphicon glyphicon-chevron-right"></span> 会則</a></li>
             <li><a href="https://dkshared98.ssl-sys.jp/minato.dance/httpsdocs/postmail/" target="_blank"><span class="glyphicon glyphicon-envelope"></span> 問い合わせ</a></li>
             <li><a href="/blog" target="_blank"><span class="glyphicon glyphicon-pencil"></span> ブログ</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
     <div class="container">
 
 <main>
@@ -125,6 +137,6 @@
   ga('create', 'UA-79425915-1', 'auto');
   ga('send', 'pageview');
 </script>
-
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

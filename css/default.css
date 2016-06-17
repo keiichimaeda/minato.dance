@@ -36,6 +36,24 @@ header.jumbotron-extended p{
   color: #eee
 }
 
+.ggmap {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 970px;
