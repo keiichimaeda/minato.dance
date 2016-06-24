@@ -16,11 +16,15 @@ footer{
   text-align: center;
   margin: 40px;
 }
+
+footer a:hover{
+  text-decoration: none;
+}
 .navbar-inverse .navbar-nav>li>a {
   color: #cdcdcd;
 }
 
-header.jumbotron-extended {
+header.jumbotron-1 {
   background: url("../img/Gaskellball.jpg");
   background-position: center center;
   background-size: cover;
@@ -28,12 +32,33 @@ header.jumbotron-extended {
   height: 100%;
 }
 
-header.jumbotron-extended small{
+header.jumbotron-2 {
+  background: url("../img/2005_ballroom_dance_championships.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: #eee;
+  height: 100%;
+}
+
+header.jumbotron-1 small{
   color: #eee
 }
 
-header.jumbotron-extended p{
+header.jumbotron-1 p{
   color: #eee
+}
+
+header.jumbotron-1 a, a:focus, a:hover{
+  color: #337ab7;
+  text-decoration: underline;
+}
+
+header.jumbotron-2 small{
+  color: #eee;
+}
+
+header.jumbotron-2 p{
+  color: #eee;
 }
 
 .ggmap {
