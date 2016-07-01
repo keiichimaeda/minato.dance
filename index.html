@@ -88,9 +88,15 @@
       </div>
       <div class="col-md-4">
         <section>
-          <h2>最新情報 <small>公式LINE</small></h2>
+          <h2>最新情報</h2>
+          <h3>ブログ</h3>
+          <div id="feed"></div>
+
+        <hr/>
+
+          <h3>公式LINE</h3>
           <img src="img/LINE.png" class="img-responsive">
-          <a href="http://line.me/ti/p/%40axz4775j"><img heght="36" border="0" alt="友だち追加" src="img/addfriends_ja.png"></a>
+          <a href="http://line.me/ti/p/%40axz4775j" target="_blank"><img heght="36" border="0" alt="友だち追加" src="img/addfriends_ja.png"></a>
         </section>
         <hr/>
 
@@ -111,5 +117,23 @@
       ga('send', 'pageview');
     </script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    $.get("http://minato.dance/blog/feed/", function (data) {
+      var htmlstr = "";
+          htmlstr += '<ul>';
+      $(data).find("item").each(function () {
+          var el = $(this);
+          htmlstr += '<li>';
+          htmlstr += '<a href="'+ el.find("link").text() + '" target="_blank">' + el.find("title").text() + '</a>';
+          htmlstr += '</li>';
+        })
+        htmlstr += '</ul>';
+
+        var container = document.getElementById("feed");
+        container.innerHTML = htmlstr;
+    });
+    </script>
+
   </body>
 </html>
