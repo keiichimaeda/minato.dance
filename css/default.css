@@ -47,6 +47,13 @@ header.jumbotron-3 {
   color: #eee;
   height: 100%;
 }
+header.jumbotron-4 {
+  background: url("../img/Chicago-City-Ballroom.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: #eee;
+  height: 100%;
+}
 
 header.jumbotron-1 small{
   color: #eee
@@ -76,6 +83,15 @@ header.jumbotron-3 small{
 header.jumbotron-3 p{
   color: #eee;
 }
+
+header.jumbotron-4 small{
+  color: #eee;
+}
+header.jumbotron-4 p{
+  color: #eee;
+}
+
+
 .ggmap {
 position: relative;
 padding-bottom: 56.25%;
